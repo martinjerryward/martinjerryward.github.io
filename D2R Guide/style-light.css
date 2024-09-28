@@ -1,0 +1,111 @@
+/* General Body Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container for Blog Post */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Blog Post Title */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Blog Post Subtitle */
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Paragraph Styles */
+p {
+    margin-bottom: 20px;
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Blockquotes */
+blockquote {
+    font-style: italic;
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 20px 0;
+    border-left: 5px solid #ccc;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+}
+
+/* Unordered Lists */
+ul {
+    list-style: disc inside;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Ordered Lists */
+ol {
+    list-style: decimal inside;
+    margin: 20px 0;
+    padding-left: 0;
+}
+
+ol li {
+    margin: 10px 0;
+}
+
+/* Code Blocks */
+code {
+    background-color: #f4f4f4;
+    padding: 3px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Horizontal Rule */
+hr {
+    border: 1px solid #ddd;
+    margin: 40px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #777;
+    margin-top: 40px;
+}
