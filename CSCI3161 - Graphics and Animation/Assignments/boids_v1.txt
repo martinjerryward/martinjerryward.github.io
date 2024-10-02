@@ -1,0 +1,132 @@
+#include <freeglut.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#define NUM_BOIDS 40
+#define MAX_SPEED 2.0f
+#define BOID_SIZE 10.0f
+#define WINDOW_WIDTH 800
+#define WINDOW_HEIGHT 600
+#define EDGE_AVOID_DIST 50.0f
+#define M_PI 3.14159265358979323846
+
+// Boid structure representing each boid's properties
+typedef struct {
+    float x, y;        // Position
+    float vx, vy;      // Velocity
+} Boid;
+
+Boid boids[NUM_BOIDS];
+
+// Function to limit the magnitude of a vector (used for speed limiting)
+void limitSpeed(Boid* boid, float maxSpeed) {
+    float speed = sqrt(boid->vx * boid->vx + boid->vy * boid->vy);
+    if (speed > maxSpeed) {
+        boid->vx = (boid->vx / speed) * maxSpeed;
+        boid->vy = (boid->vy / speed) * maxSpeed;
+    }
+}
+
+// Constrain a boid to within the window. If it gets too close to an edge, nudge it back in.
+void keepWithinBounds(Boid* boid) {
+    const float margin = 50.0f;
+    const float turnFactor = 1.0f;
+
+    if (boid->x < margin) {
+        boid->vx += turnFactor;
+    }
+    if (boid->x > WINDOW_WIDTH - margin) {
+        boid->vx -= turnFactor;
+    }
+    if (boid->y < margin) {
+        boid->vy += turnFactor;
+    }
+    if (boid->y > WINDOW_HEIGHT - margin) {
+        boid->vy -= turnFactor;
+    }
+}
+
+// Function to update the positions of all boids
+void updateBoids() {
+    for (int i = 0; i < NUM_BOIDS; i++) {
+        keepWithinBounds(&boids[i]);  // Make boids stay within the window bounds
+        limitSpeed(&boids[i], MAX_SPEED);  // Limit the speed of the boids
+
+        // Update position based on velocity
+        boids[i].x += boids[i].vx;
+        boids[i].y += boids[i].vy;
+    }
+}
+
+// Function to draw a boid as a triangle pointing in the direction of travel
+void drawBoid(Boid boid) {
+    glPushMatrix();
+
+    // Move to the boid's position
+    glTranslatef(boid.x, boid.y, 0);
+
+    // Calculate the angle the boid is traveling at
+    float angle = atan2(boid.vy, boid.vx) * 180 / M_PI;
+
+    // Rotate the boid to face the direction it's moving
+    glRotatef(angle, 0, 0, 1);
+
+    // Draw the boid as a triangle pointing towards the positive X direction
+    glBegin(GL_TRIANGLES);
+    glVertex2f(10.0f, 0.0f);     // Tip of the triangle (now pointing right)
+    glVertex2f(-10.0f, 5.0f);    // Bottom left corner
+    glVertex2f(-10.0f, -5.0f);   // Bottom right corner
+    glEnd();
+
+    glPopMatrix();
+}
+
+
+// Main display function
+void display() {
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    // Draw each boid
+    for (int i = 0; i < NUM_BOIDS; i++) {
+        drawBoid(boids[i]);
+    }
+
+    glutSwapBuffers();
+}
+
+// Timer function to update and redisplay
+void timer(int value) {
+    updateBoids();               // Update the boid positions
+    glutPostRedisplay();          // Mark the window for redrawing
+    glutTimerFunc(16, timer, 0);  // Set a new timer for 60 FPS (approximately 16ms per frame)
+}
+
+// Initialization of OpenGL settings
+void init() {
+    glClearColor(0.0, 0.0, 0.0, 1.0);
+    glOrtho(0, WINDOW_WIDTH, 0, WINDOW_HEIGHT, -1, 1);
+
+    // Initialize boid positions and velocities
+    for (int i = 0; i < NUM_BOIDS; i++) {
+        boids[i].x = rand() % WINDOW_WIDTH;
+        boids[i].y = rand() % WINDOW_HEIGHT;
+        boids[i].vx = (rand() % 100 / 100.0f) * 2 - 1;
+        boids[i].vy = (rand() % 100 / 100.0f) * 2 - 1;
+    }
+}
+
+// Main function
+int main(int argc, char** argv) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+    glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+    glutCreateWindow("Boids - Keep Within Bounds");
+
+    init();
+    glutDisplayFunc(display);
+    glutTimerFunc(0, timer, 0);
+    glutMainLoop();
+
+    return 0;
+}

@@ -1,0 +1,72 @@
+.csci3171 td {
+    border: 2px solid #ffcccb; /* Light red border */
+    background-color: #ffe6e6; /* Light red background */
+}
+
+.csci3120 td {
+    border: 2px solid #cce5ff; /* Light blue border */
+    background-color: #e6f0ff; /* Light blue background */
+}
+
+.csci3161 td {
+    border: 2px solid #d5e8d4; /* Light green border */
+    background-color: #e8f5e9; /* Light green background */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+/* Default style for rows without a specific class */
+tr:not(.csci3171):not(.csci3120):not(.csci3161) td {
+    background-color: #f4f4f4; /* Light gray for non-CSCI rows */
+    border: 1px solid #ddd; /* Regular border */
+}

@@ -1,0 +1,187 @@
+
+
+
+Schedule
+
+CSCI 3171	-	Network
+CSCI 3120	-	OS
+CSCI 3161	- 	Graphics/Animation
+
+Sept 12 Felips Arrives
+
+Sept 15 CSCI3171 - Lab 1
+Sept 15 tutor 5pm (Made notes but did not show)
+
+Sept 22 CSCI3171 - Lab2
+Sept 23 CSCI3171 - Assignment 1
+
+Sept 27 CSCI3171 - Pop Quiz 2
+Sept 27 CSCI3120 - Assignment 1 (4PM)
+
+Oct 1 (12:30) “Jan Nason” Followup
+		902-706-6695
+
+Oct 3 CSCI3161 Assignment 1
+Oct 7 CSCI3171 Assignment 2
+Oct 9 CSCI3161 Test 1
+Oct 11 CSCI3120 Assignment 2
+
+
+Oct 24 CSCI 3120 Midterm (6:00-8:00pm KILLAM LIBRARY MACME)
+Oct 25 CSCI3120 Assignment 3
+
+
+Nov 3 CSCI3161 Assignment 2
+Nov 8 CSCI3120 Assignment 4
+
+
+Nov 27 CSCI3161 Test 2
+Nov 29 CSCI3120 Assignment 5
+Dec 3 CSCI3161 Project
+
+
+Detailed schedule, prof pics, contacts etc
+Email profs
+Coop applications
+Assignment 2 execvp
+Zelda echos of wisdom 
+Black wo kong
+
+Email about pop quizzes 3171
+Email tutor
+Smaller pack / class, gym split (shower shoes etc)
+Masters in computer graphics
+Blog tutorial
+Make dal health account
+Deadpool
+Wing send schedule 
+Arduino 
+Neovim for noobs 
+Cassie cipher (personal)
+Design ref,
+Megaman8
+Links awakening
+Mario 
+Cancel gym membership 
+
+Chat gpt (increase)
+Linked in evaluate, linked in learning 
+Genetic algorithms 
+Qi programming languages notes
+
+
+(Kitty terminal setup)
+https://www.youtube.com/watch?v=BeSUAEZIf9A
+
+Drop dates
+Mcat / other follow up
+.
+Qi’s Courses
+———
+2115 theory of computing
+2203 data science for everyone
+4140 Advanced Database Systems
+3160 design
+3137 principles of programming languages
+3101 Social, Ethical and Professional Issues in Computer Science
+
+James
+Game design
+Singing?
+Algorithms
+Operating systems
+User interface 3160
+
+Aaaah Albadi
+CSCI 3120 operating systems
+CSCI 4178 Cyber Security & Defense
+CSCI 4171 Networks and Communication
+
+Email terry
+
+Accommodations note taker
+Oct1 2:30 (stats follow up) “Jan Nason”
+	902-706-6695
+
+Stats/prob
+Email terry
+Timeline people contacts
+
+.
+comfyUI
+Perm market for deckbox
+Change master password
+Change main passwords (Nord pass)
+Audio msg Qi
+Immish
+Stats transfer
+Audit? Eng (Austin class)
+Linked in learning
+Performance Appraisal  (COOP)
+Arduino
+Accomodate register
+Devaughns videos / photos
+Chocolate math tutor (Kerry Joy)
+Contact rustified 
+Felipe sept 12
+
+
+//SCRIPTS D2R//
+- Buy/sell rings/ammy
+- Start jobs timestamp
+- Auto game maker [tracker]
+- Multi loader [bo]
+- Multi char loader, loot check
+- Move gold
+- Drop gold
+- Sorting
+- Macro recorder
+
+Calvin mold
+
+Project management ?
+
+
+Buy/sell grinding web loop
+
+11:30 office of the register 
+
+
+CSCI 3171 - 
+Mondays 12-2 office hours (room 319 Goldberg)
+Or right after class
+
+ACADEMIC AUDIT
+
+STAT 2060
+
+CSCI 4000+
+CSCI 4000+
+CSCI 4000+
+
+CSCI 3110
+CSCI 3120
+CSCI 3171
+CSCI 3136
+
+CSCI 3000+
+CSCI 3000+
+
+Advanced Credit Hours 2000+ (need 21 credit hours / 7 classes)
+
+//////// CSCI 3120 ////
+
+
+
+
+//////
+Hold volume up + power button
+
+iwctl
+Device list 
+
+station <interface> scan
+ 	replace <interface> with the name found on the device list
+
+station <interface> get-networks
+

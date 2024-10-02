@@ -1,0 +1,10 @@
+﻿  Boids.c
+C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\Project1\Boids.c(26,19): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\Project1\Boids.c(76,49): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\Project1\Boids.c(135,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\Project1\Boids.c(136,29): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\Project1\Boids.c(150,21): warning C4113: 'void (__cdecl *)()' differs in parameter lists from 'void (__cdecl *)(void)'
+  LINK : C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\x64\Debug\Project1.exe not found or not built by the last incremental link; performing full link
+  Project1.vcxproj -> C:\Users\Utility\Desktop\repos\Dal_Fall_2024\CSCI3161 - Graphics and Animation\Assignments\Assignment1_Boids\x64\Debug\Project1.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
